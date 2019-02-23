@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:background="#5D1049"
+    >
+    <EditText
+        android:id="@+id/edtCode"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+android:background="@drawable/edit_bckground_color"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:textColor="#ffffff"
+        android:paddingStart="9dp"
+        android:textColorHint="#ffffff"
+        android:ems="10"
+        android:hint="Enter Code"
+        android:inputType="number"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_bckground_color"
+        android:paddingStart="9dp"
+
+        android:layout_below="@+id/edtCode"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_marginTop="15dp"
+        android:padding="3dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:singleLine="true" />
+    <EditText
+        android:id="@+id/edtWeight"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingStart="9dp"
+
+        android:background="@drawable/edit_bckground_color"        android:layout_below="@+id/edtName"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:ems="10"
+        android:hint="Enter Weight"
+        android:inputType="numberDecimal"
+        android:singleLine="true" />
+    <EditText
+        android:id="@+id/edtPrice"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_bckground_color"        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:layout_below="@+id/edtWeight"
+        android:layout_marginTop="15dp"
+        android:paddingStart="9dp"
+
+        android:ems="10"
+        android:hint="Enter Price"
+        android:inputType="numberDecimal"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/edtDate"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_bckground_color"        android:layout_below="@+id/edtPrice"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:paddingStart="9dp"
+
+        android:hint="Enter Date"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:focusable="false"
+        android:drawableEnd="@drawable/cal"
+        android:inputType="date"
+        android:singleLine="true" />
+
+
+    <Button
+        android:id="@+id/btnAddDetails"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:background="#4E0D3A"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edtDate"
+        android:text="Add Details" />
+</RelativeLayout>
